@@ -32,6 +32,11 @@ jobs:
 
       - name: Build for GitHub Pages
         run: npx vite build --config vite.config.ghpages.js
+        run: |
+          echo "=== BASE PATH CHECK ==="
+          grep -Eo '(src|href)="[^"]+"' dist/index.html
+          echo "=== BUILT FILES ==="
+          find dist -maxdepth 2 -type f
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
