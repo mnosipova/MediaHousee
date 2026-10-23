@@ -98,7 +98,7 @@ export default function App() {
 
     if (totalScore >= 70) return { title: 'Опытный инвестор', subtitle: 'Близок к результату! Вы отлично чувствуете рынок недвижимости.' };
     if (avgDeviation > 0.15) return { title: 'Щедрый инвестор', subtitle: 'Вы переплачиваете за недвижимость. Попробуйте быть осмотрительнее!' };
-    return { title: 'Скряга', subtitle: 'Экономный инвестор. Вы tendете занижать цены.' };
+    return { title: 'Скряга', subtitle: 'Экономный инвестор. Вы занижаете цены.' };
   };
 
   const getOverpaySummary = () => {
